@@ -4,6 +4,7 @@
   "type": "library",
   "keywords": ["curl"],
   "license": "MIT",
+  "version": "0.9.8",
   "authors": [
     {
       "name": "leohu",
