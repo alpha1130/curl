@@ -15,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "alpha1130\\curl": "src/"
+      "alpha1130\\curl\\": "src/"
     }
   }
 }
