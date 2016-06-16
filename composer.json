@@ -1,0 +1,15 @@
+{
+  "name": "alpha1130/curl",
+  "description": "curl component",
+  "authors": [
+    {
+      "name": "leohu",
+      "email": "cqleohu@qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "alpha1130\\curl": "src/"
+    }
+  }
+}
