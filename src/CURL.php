@@ -43,7 +43,7 @@ class CURL {
      * make http post request
      *
      * @param string $url url string
-     * @param array $params http post params
+     * @param mixed $params http post params
      * @param array $opts curl options like CURLOPT_XXX
      * @return string http response body string
      * @throws CURLException
@@ -51,9 +51,9 @@ class CURL {
     public static function post($url, $params = array(), array $opts = array()) {
 
         $opts[CURLOPT_URL] = $url;
-        $opts[CURLOPT_POSTFIELDS] = $params;
+        $opts[CURLOPT_POSTFIELDS] = is_array($params) ? http_build_query($params) : $params;
         $opts[CURLOPT_POST] = true;
-
+        
         return self::request($opts);
 
     }
