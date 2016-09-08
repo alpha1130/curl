@@ -30,7 +30,7 @@ class CURL {
 
         if($params) {
             $sep = strpos($url, '?') === false ? '?' : '&';
-            echo $url = $url . $sep . http_build_query($params);
+            $url = $url . $sep . http_build_query($params);
         }
 
         $opts[CURLOPT_HTTPGET] = true;
